@@ -29,6 +29,7 @@ def home(request):
         hot_blogs_for_7_days = get_7_days_hot_blogs()
         cache.set('hot_blogs_for_7_days', hot_blogs_for_7_days, 3600)
 
+
     context = {}
     context['dates'] = dates
     context['read_nums'] = read_nums
